@@ -58,7 +58,7 @@ async function run() {
       }
     });
 
-    // Get all jobs
+    // Get all jobs API
     app.get("/all-jobs", async (req, res) => {
       try {
         const jobs = await jobsCollection.find({}).toArray();
